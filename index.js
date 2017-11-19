@@ -8,32 +8,32 @@ var app = express();
 // app.use(express.static('public'));
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, 'public')))
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'ejs')
+app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-	response.sendFile(path.join(__dirname + '/views/index.html'));
+	response.sendFile(path.join(__dirname + '/public/views/index.html'));
 });
 
 app.get('/index.html', function(request, response) {
-	response.sendFile(path.join(__dirname + '/views/index.html'));
+	response.sendFile(path.join(__dirname + '/public/views/index.html'));
 });
 
 app.get('/contact-me.html', function(request, response) {
-	response.sendFile(path.join(__dirname + '/views/contact-me.html'));
+	response.sendFile(path.join(__dirname + '/public/views/contact-me.html'));
 });
 
 app.get('/about-me.html', function(request, response) {
-	response.sendFile(path.join(__dirname + '/views/about-me.html'));
+	response.sendFile(path.join(__dirname + '/public/views/about-me.html'));
 });
 
 app.get('/education.html', function(request, response) {
-	response.sendFile(path.join(__dirname + '/views/education.html'));
+	response.sendFile(path.join(__dirname + '/public/views/education.html'));
 });
 
 app.get('/projects.html', function(request, response) {
-	response.sendFile(path.join(__dirname + '/views/projects.html'));
+	response.sendFile(path.join(__dirname + '/public/views/projects.html'));
 });
 
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
