@@ -1,0 +1,151 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#name{
+	text-align: center;
+	font-family: Helvetica Neue, sans-serif;
+	color: #565656;
+	font-size: 60px;
+	margin: 5px;
+}
+
+#name-div{
+	cursor: pointer;
+}
+
+#page-border{
+	position: absolute;
+	border: 2px lightgrey;
+	border-style: solid;
+	height: 90%;
+	width: 90%;
+	left: 5%;
+	top: 5%;
+}
+
+#button-div{
+	position: fixed;
+	left: 49%;
+    width: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#projects-button{
+
+	top: 10px;
+	left: 0%;
+}
+
+#about-me-button{
+	top: 10px;
+	left: 2%;
+}
+
+#courses-button{
+	top: 10px;
+	left: 4%;
+}
+
+#contact-me-button{
+	top: 10px;
+	left: 6%;
+}
+
+#about-me-paragraph{
+	text-align: center;
+	position: relative;
+	top: 4em;
+}
+
+#left-line{
+	position: absolute;
+	border: 0;
+	height: 2px;
+	background-color: lightgrey;
+	top: 105px;
+	left: 2%;
+	width: 25%;
+}
+
+#right-line{
+	position: absolute;
+	border: 0;
+	height: 2px;
+	background-color: lightgrey;
+	top: 105px;
+	right: 2%;
+	width: 25%;
+	color: lightgrey;
+}
+
+#music-map-button{
+	top: -40px;
+	left: 120px;
+}
+
+#linkedin-photo{
+	position: absolute;
+	right: 48.5%;
+	bottom: 10px;
+	width: 2em;
+	height: 2em;
+}
+
+#contact-info-div{
+	position: relative;
+	top: 75px;
+	font-family: Helvetica Neue, sans-serif;
+	color: #565656;
+}
+
+#contact-info-list-header{
+	padding: 10px;
+	font-weight: bold;
+}
+
+.contact-info-list-element{
+	position: relative;
+	left: 10px;
+}
+
+#input-div{
+	position: relative;
+	top: -15px;
+	left: 370px;
+}
+
+#input-name{
+	position: relative;
+	left: 0;
+	width: 14em;
+}
+
+#input-email{
+	position: relative;
+	width: 14em;
+}
+
+#input-message{
+	position: absolute;
+	top: 25px;
+	left: 0;
+	width: 29.5em;
+	height: 10em;
+	box-sizing: border-box;
+}
+
+#input-message::placeholder{
+	vertical-align: text-top;
+}
+
+#message-button{
+	position: absolute;
+	top: 140px;
+	left: 120px;
+}

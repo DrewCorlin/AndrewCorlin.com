@@ -14,12 +14,12 @@
       </div>
       <div id="button-div">
         <button 
-      		class="mdc-button mdc-button--raised mdc-riple-surface mdc-button--compact" id="projects-button"
-      		data-mdc-auto-init="MDCRipple"
+          class="mdc-button mdc-button--raised mdc-riple-surface mdc-button--compact" id="projects-button"
+          data-mdc-auto-init="MDCRipple"
           onclick="buttonClick('./projects.html')"
-      	>
+        >
           Projects
-    		</button>
+        </button>
 
         <button 
           class="mdc-button mdc-button--raised mdc-riple-surface mdc-button--compact" id="about-me-button"
@@ -51,16 +51,34 @@
       <a href="https://linkedin.com/in/andrew-corlin">
         <img src="linkedin.png" alt="Grey linkedin Logo"id="linkedin-photo">
       </a>
+      <!-- Contact info list -->
+      <div id="contact-info-div">
+        <ul style="list-style-type:none">
+          <li id="contact-info-list-header">Contact Information</li>
+          <li class="contact-info-list-element">andrewcorlin@gmail.com</li>
+          <li class="contact-info-list-element">(310) 780-9976</li>
+          <li class="contact-info-list-element">andrewcorlin.com</li>
+          <li class="contact-info-list-element">https://github.com/drewcorlin</li>
+        </ul>
+      </div>
+      <!-- Message Me -->
+      <div id="input-div">
+        <input type="text" name="name" id="input-name" placeholder="Name">
+        <input type="text" name="email" id="input-email" placeholder="Email">
+        <input type="text" name="message" id="input-message" placeholder="Message">
+        <button class="mdc-button mdc-button--raised mdc-riple-surface mdc-button--compact"
+          id="message-button">Send</button>
+      </div>
     </div>
-  	<script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+    <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
 
-  	<script>mdc.autoInit()</script>
+    <script>mdc.autoInit()</script>
   
-  	<script>
-  		function buttonClick(url){
-  			window.location.href = url;
-  		}
-  	</script>
+    <script>
+      function buttonClick(url){
+        window.location.href = url;
+      }
+    </script>
 
   </body>
 </html> 
