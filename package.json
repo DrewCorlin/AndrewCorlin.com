@@ -1,0 +1,36 @@
+{
+  "name": "andrew-corlin.com",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@material/auto-init": "^0.25.0",
+    "babel-cli": "^6.26.0",
+    "cors": "^2.8.4",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "material-components-web": "^0.21.1",
+    "mongodb": "^2.2.33",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrewCorlin/AndrewCorlin.com.git"
+  },
+  "author": "Drew Corlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrewCorlin/AndrewCorlin.com/issues"
+  },
+  "homepage": "https://github.com/DrewCorlin/AndrewCorlin.com#readme"
+}
