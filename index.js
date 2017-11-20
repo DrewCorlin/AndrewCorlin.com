@@ -9,6 +9,8 @@ var app = express();
 app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/muiscript', express.static(__dirname + '/node_modules/material-components-web/dist/'));
+app.use('/muistyle', express.static(__dirname + '/node_modules/material-components-web/dist/'));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
