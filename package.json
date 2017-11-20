@@ -21,7 +21,7 @@
     "tape": "^4.7.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js --hot --watch"
   },
   "repository": {
     "type": "git",

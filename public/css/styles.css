@@ -11,6 +11,26 @@ html, body {
 	margin: 5px;
 }
 
+#education-body{
+	position: relative;
+	top: 3em;
+	left: 2em;
+	font-family: Helvetica Neue, sans-serif;
+	color: #565656;
+}
+
+#tufts{
+	font-size: 20px;
+}
+
+#course-header{
+	margin-bottom: -1em;
+}
+
+#course-list{
+	margin-left: -1.3em;
+}
+
 #name-div{
 	cursor: pointer;
 }
