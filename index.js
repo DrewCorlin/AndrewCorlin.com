@@ -11,15 +11,16 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/muiscript', express.static(__dirname + '/node_modules/material-components-web/dist/'));
 app.use('/muistyle', express.static(__dirname + '/node_modules/material-components-web/dist/'));
+app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-	response.sendFile(path.join(__dirname + '/public/views/index.html'));
+	response.sendFile(path.join(__dirname + '/public/views/about-me.html'));
 });
 
-app.get('/index.html', function(request, response) {
-	response.sendFile(path.join(__dirname + '/public/views/index.html'));
+app.get('/template.html', function(request, response) {
+	response.sendFile(path.join(__dirname + '/public/views/template.html'));
 });
 
 app.get('/contact-me.html', function(request, response) {
